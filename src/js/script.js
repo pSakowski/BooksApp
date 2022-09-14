@@ -161,8 +161,8 @@ class BooksList {
 
     for(let book of this.data) {
 
-      //book.ratingBgc = determineRatingBgc(book.rating);
-      //book.ratingWidth = book.rating * 10;
+      book.ratingBgc = thisBook.determineRatingBgc(book.rating);
+      book.ratingWidth = book.rating * 10;
 
       // generateHTML based on template
       const generatedHTML = templates.menuBook(book);
